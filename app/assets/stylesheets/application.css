@@ -17,17 +17,17 @@
 
 @font-face {
 	font-family: 'Ubuntu';
-	src: url('fonts/3976.ttf');
+	src: url('3976.ttf');
 }
 
 @font-face {
 	font-family: 'FLX';
-	src: url('fonts/UpheavalPro.otf');
+	src: url('UpheavalPro.otf');
 }
 
 @font-face {
 	font-family: 'FontAwesome';
-	src: url('fonts/FontAwesome.otf');
+	src: url('FontAwesome.otf');
 }
 
 *::selection {
@@ -108,7 +108,7 @@ button:hover{
 .content{
 	padding-left: 70px;
 	padding-right: 70px;
-	background: url('images/bg.jpg') #151515;
+	background: url('bg.jpg') #151515;
 	background-size: 1920px 760px;
 	height: 770px;
 	transition: 0.5s;
@@ -354,7 +354,7 @@ footer a:hover, footer a:focus{
 
 @media screen and (max-width: 1050px) {
 	.content{
-		background: url('images/mob-bg.jpg');
+		background: url('mob-bg.jpg');
 		height: 1200px;
 	}
 	.player{
