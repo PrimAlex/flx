@@ -1,0 +1,546 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+
+@font-face {
+	font-family: 'Ubuntu';
+	src: url('fonts/3976.ttf');
+}
+
+@font-face {
+	font-family: 'FLX';
+	src: url('fonts/UpheavalPro.otf');
+}
+
+@font-face {
+	font-family: 'FontAwesome';
+	src: url('fonts/FontAwesome.otf');
+}
+
+*::selection {
+	background: #fff;
+}
+
+body{
+	margin: auto;
+	padding: auto;
+	background: #151515;
+	color: #F4C944;
+	font-family: "FLX";
+	letter-spacing: 2px;
+}
+
+input{
+	margin: 15px;
+	border: #F4C944 solid 2px;
+	border-radius: none;
+	color: #F4C944;
+	background: #151515;
+	outline: none;
+}
+
+input:focus{
+	border: #F4C984 solid 2px;
+	background: #181818;
+	color: #F4C984;
+}
+
+button{
+	margin: 15px;
+	border: none;
+	border-radius: none;
+	text-decoration: none;
+	background: #F4C944;
+	color: #151515;
+}
+
+button:hover{
+	background: #F4C974
+}
+
+.left{
+	text-align: left;
+	align-content: left;
+}
+
+.right{
+	text-align: right;
+	align-content: right;
+}
+
+.line{
+	background: #F4C944;
+	width: 100%;
+	height: 2px;
+}
+.little-line-l{
+	background: #F4C944;
+	width: 30%;
+	height: 2px;
+	margin-bottom: 6px;
+	margin-top: 6px;
+}
+
+.little-line-r{
+	background: #F4C944;
+	width: 30%;
+	height: 2px;
+	margin-left: 70%;
+	margin-bottom: 6px;
+	margin-top: 6px;
+}
+
+/*MAIN*/
+
+.content{
+	padding-left: 70px;
+	padding-right: 70px;
+	background: url('bg.jpg') #151515;
+	background-size: 1920px 760px;
+	height: 770px;
+	transition: 0.5s;
+}
+
+#main{
+	position: relative;
+}
+
+
+#header, #chelka{
+	color: #fff;
+	background: #000;
+	text-align: center;
+	font-size: 40pt;
+}
+
+#mobile-header{
+	padding: 5px;
+	color: #fff;
+	text-align: center;
+	display: none;
+}
+
+#chelka{
+	margin: auto;
+	margin-bottom: 25px;
+	width: 400px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	font-size: 40pt;
+}
+
+.ico, .ico:focus{
+	font-family: 'FontAwesome';
+	color: #fff;
+	margin-right: 20px;
+	margin-left: 20px;
+	text-decoration: none;
+}
+
+.ico:hover{
+	color: #F4C944;
+	text-decoration: none;
+}
+
+#biglogo{
+	width: 644px;
+	height: 644px;
+	display: block;
+	float: left;
+}
+
+#minlogo{
+	width: 75px;
+	height: 75px;
+	margin: 5px;
+	display: block;
+}
+
+#mobile-title{
+	font-size: 25px;
+}
+
+/*PLAYER*/
+
+.player{
+	background: #000;
+	border: #707070 solid 1px;
+	height: 644px;
+	border-radius: 10px;
+	opacity: 0.8;
+	padding: 10px;
+	float: right;
+	transition: 0s !important;
+}
+audio{
+	width: 588px;
+	border-radius: 10px;
+}
+
+/*SUBSCRIBE*/
+
+.subscribe{
+	margin: auto;
+	text-align: center;
+	vertical-align: middle;
+	height: 780px;
+	padding-left: 70px;
+	padding-right: 70px;
+	padding-bottom: 25px;
+	background: #151515;
+	display: table;
+  	width: 100%;
+}
+
+.subscribe input{
+	width: 400px;
+	height: 40px;
+	padding: 5px;
+}
+
+.subscribe button{
+	width: 200px;
+	height: 40px;
+	font-size: 26px;
+	padding: 3px;
+}
+
+.subscribe h1 br{
+	display: none;
+}
+
+.subscribe .row{
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
+
+/*FOOTER*/
+
+footer{
+	color: #707070;
+	background: #000;
+	letter-spacing: normal;
+	font-family: 'Ubuntu';
+	font-size: 12pt;
+	padding: 25px;
+	padding-left: 70px;
+	padding-right: 70px;
+	margin-top: -12px;
+}
+
+footer a{
+	color: #937933;
+	text-decoration: none;
+	cursor: default;
+}
+
+footer a:hover, footer a:focus{
+	color: #937933;
+	text-decoration: none;
+}
+
+.rights{
+	text-align: left;
+}
+
+.creator{
+	text-align: right;
+}
+
+
+/*AUDIO*/
+
+.amazingaudioplayer-volume-bar{
+	top: 30px;
+}
+.amazingaudioplayer-tracklist-container{
+	height: 550px;
+	min-height: 230px;
+}
+.amazingaudioplayer-item-title{
+	font-size: 15pt;
+	height: 40px;
+	padding: 5px;
+}
+.amazingaudioplayer-progress{
+	height: 24px;
+}
+
+/*MEDIA*/
+
+
+@media screen and (max-width: 1820px) and (min-width: 1310px){
+	.player{
+		width: 50%;
+		float: right;
+	}
+	#biglogo{
+		float: left;
+	}
+	#chelka{
+		font-size: 33pt;
+		border-bottom-left-radius: 40px;
+		border-bottom-right-radius: 40px;
+		width: 600px;
+	}
+
+}
+
+@media screen and (max-width: 1400px)  {
+	#header{
+		font-size: 30pt;
+	}
+	#chelka{
+		font-size: 25pt;
+		border-bottom-left-radius: 30px;
+		border-bottom-right-radius: 30px;
+		width: 500px;
+	}
+	.player{
+		width: 40%;
+	}
+}
+
+
+@media screen and (max-width: 1310px) {
+	.player{
+		margin: auto;
+		margin-left: none;
+		width: 100%;
+		float: none;
+		margin: auto;
+	}
+	#biglogo{
+		display: none;
+
+	}
+	#chelka{
+		font-size: 40pt;
+		width: 150%;
+		margin-left: -25%;
+		border-radius: 0px;
+	}
+	#mobile-header{
+		display: block;
+	}
+	#header{
+		display: none;
+	}
+	#mobile-title{
+		font-size: 30px;
+	}
+	#minlogo{
+		width: 120px;
+		height: 120px;
+	}
+	.amazingaudioplayer-tracklist-container{
+		height: 400px;
+	}
+}
+
+@media screen and (max-width: 1050px) {
+	.content{
+		background: url('mob-bg.jpg');
+		height: 1200px;
+	}
+	.player{
+		margin: auto;
+		margin-left: none;
+		width: 100%;
+		height: 700px;
+		float: none;
+		margin: auto;
+		opacity: 0.95;
+	}
+	.content{
+		height: 900px;
+	}
+	#biglogo{
+		display: none;
+
+	}
+	#chelka{
+		font-size: 70pt;
+		width: 114%;
+		margin-left: -7%;
+		border-radius: 0px;
+	}
+	#mobile-header{
+		display: block;
+	}
+	#header{
+		display: none;
+	}
+	#mobile-title{
+		font-size: 50px;
+	}
+	#minlogo{
+		width: 120px;
+		height: 120px;
+	}
+	.subscribe h1{
+		font-size: 30pt;
+	}
+	.subscribe h1 span{
+		font-size: 80pt; 
+	}
+	.subscribe h1 br{
+		display: block;
+	}
+	.subscribe input{
+		width: 600px;
+		height: 60px;
+		font-size: 20pt;
+		margin-top: 10px;
+	}
+	.subscribe button{
+		width: 600px;
+		height: 80px;
+		font-size: 30pt;
+	}
+	.amazingaudioplayer-tracklist-container{
+		height: 250px;
+	}
+
+	.amazingaudioplayer-item-title{
+		font-size: 26pt;
+		height: 60px;
+	}
+	.amazingaudioplayer-item-id{
+		font-size: 12pt;
+	}
+}
+
+@media screen and (max-width: 850px) {
+	#mobile-title{
+		font-size: 22px;
+	}
+	#chelka{
+		font-size: 30pt;
+		width: 118%;
+		margin-left: -9%;
+		border-bottom-left-radius: 30px;
+		border-bottom-right-radius: 30px;
+	}
+	.subscribe h1{
+		font-size: 25pt;
+	}
+	.subscribe h1 span{
+		font-size: 50pt; 
+	}
+	.subscribe h1 br{
+		display: block;
+	}
+	.subscribe input{
+		width: 500px;
+		height: 40px;
+		font-size: 17pt;
+		margin-top: 8px;
+	}
+	.subscribe button{
+		width: 500px;
+		height: 60px;
+		font-size: 30pt;
+	}
+	footer{
+		font-size: 10pt;
+	}
+	.player{
+		height: 600px;
+	}
+	.content{
+		height: 740px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.creator{
+		text-align: left;
+	}
+}
+
+@media screen and (max-width: 660px) {
+	#chelka{
+		font-size: 30pt;
+		width: 120%;
+		margin-left: -10%;
+	}
+	#mobile-title{
+		font-size: 27px;
+	}
+	.subscribe{
+		padding: 10px;
+	}
+	.subscribe h1{
+		font-size: 20pt;
+	}
+	.subscribe h1 span{
+		font-size: 40pt; 
+	}
+	.subscribe h1 br{
+		display: block;
+	}
+	.subscribe input{
+		width: 400px;
+		height: 40px;
+		font-size: 15pt;
+	}
+	.subscribe button{
+		width: 400px;
+		height: 50px;
+		font-size: 26pt;
+	}
+	.player{
+		height: 630px;
+	}
+	.amazingaudioplayer-item-title{
+		font-size: 20pt;
+		height: 70px;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.subscribe h1{
+		font-size: 16pt;
+	}
+	.subscribe h1 span{
+		font-size: 34pt; 
+	}
+	.subscribe h1 br{
+		display: block;
+	}
+	.subscribe input{
+		width: 300px;
+		height: 40px;
+		font-size: 12pt;
+	}
+	.subscribe button{
+		width: 300px;
+		height: 40px;
+		font-size: 20pt;
+	}
+	.creator{
+		font-size: 9pt;
+	}
+	.player{
+		height: 600px;
+	}
+	.amazingaudioplayer-tracklist-container{
+		height: 230px;
+	}
+}
+
