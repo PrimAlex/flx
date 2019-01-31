@@ -94,7 +94,7 @@ button:hover{
 .content{
 	padding-left: 70px;
 	padding-right: 70px;
-	background: url('images/bg.jpg') #151515;
+	background: #151515;
 	background-size: 1920px 760px;
 	height: 770px;
 	transition: 0.5s;
@@ -340,7 +340,6 @@ footer a:hover, footer a:focus{
 
 @media screen and (max-width: 1050px) {
 	.content{
-		background: url('images/mob-bg.jpg');
 		height: 1200px;
 	}
 	.player{
