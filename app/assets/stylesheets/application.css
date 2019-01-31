@@ -15,20 +15,6 @@
  */
 
 
-@font-face {
-	font-family: 'Ubuntu';
-	src: url('fonts/3976.ttf');
-}
-
-@font-face {
-	font-family: 'FLX';
-	src: url('fonts/UpheavalPro.otf');
-}
-
-@font-face {
-	font-family: 'FontAwesome';
-	src: url('fonts/FontAwesome.otf');
-}
 
 *::selection {
 	background: #fff;
