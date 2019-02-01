@@ -14,8 +14,6 @@
  *= require_self
  */
 
-
-
 *::selection {
 	background: #fff;
 }
@@ -213,6 +211,7 @@ audio{
 	text-align: center;
 	vertical-align: middle;
 }
+
 
 /*FOOTER*/
 
